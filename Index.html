@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		*{
+			font-family: courier,arial,helvetica;
+		}
+		body{
+			background-color:rgb(255, 196, 0);			
+            text-align: center;
+            justify-content: center;
+    align-items: center;
+   margin-left: 130px;
+		}
+		h1{
+			color: black;
+			display: inline-block;
+			padding: 10px;
+		}
+		button{
+			border:none;
+			padding:15px;
+            border-radius: 15px;	
+            		
+		}
+		.main{
+			position: relative;
+            /* top: 250px; */
+            border: 5px solid black;
+            border-radius: 80%;
+            width: 500px;
+    height: 320px;
+    justify-content: center;
+        }
+
+
+    </style>
+    
+	<div class="main">
+	<div>
+		<h1>STOP WATCH</h1>
+	</div>
+	<div>
+		<h1 id="minutes">0</h1>
+		<h1 id="seconds">0</h1>
+		<h1 id="milliseconds">0</h1>
+	</div>
+	<div>
+		<button id="start" onclick="start()">Start</button>
+		<button id="pause" onclick="stop()">Stop</button>
+		<button onclick="reset()" type="reset">Reset</button>
+	</div>
+    
+    <div class="records">
+        <table>
+            <tbody>
+                <tr>
+                <td id="recordNumber"></td>
+                <td id="record"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    </div>
+    
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
